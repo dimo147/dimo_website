@@ -1,34 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-body{
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
-.nav{
-    background-color: #161616;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    position: relative;
-    z-index: 34;
-}
-.nav li{
-    display:inline;
-}
-.nav #active{
-    color: white;
-}
-.nav a{
-    display: inline-block;
-    font-size: 20;
-    padding: 15px 20px 15px 20px;
-    text-decoration: none;
-    color: #ccc;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+.row {
+  display: flex;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.box1 {
+  background-color: #040306;
+  width: 100%;
+  height: 160vh;
+}
+
+.box2 {
+  background-color: rgba(4, 3, 6, 0.7882352941);
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  list-style: none;
+  margin: 0 10%;
+  padding: 40px 0 60px 0;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.nav li {
+  display: inline;
+}
+.nav #active {
+  color: white;
+}
+.nav a {
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px 20px 15px 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ccc;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.nav .icon {
+  height: 60px;
+  float: left;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+
+.landing {
+  margin: 0 10%;
+}
+.landing .text1 {
+  font-family: "Baskervville", serif;
+  font-weight: 300;
+  font-size: 140px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.landing .text1 .ti {
+  margin-left: 7vw;
+  text-align: center;
+}
+.landing .text1 .crea {
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+  margin-top: auto;
+}
+.landing .text1 img {
+  border-radius: 50% 50% 50% 5px; /*TL TR BR BL*/
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+  margin: 0 15px;
+  margin-bottom: 40px;
+}
+.landing .text1 .tive {
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+  margin-top: auto;
+}
+.landing .text1 p {
+  margin: 0;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.landing .dr {
+  margin: auto;
+  margin-top: 7vh;
+}
+.landing .dr .desc {
+  width: 400px;
+  font-size: 24px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6784313725);
+  text-transform: uppercase;
+  word-spacing: 3px;
+  margin-right: 15vh;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.landing .dr .desc span {
+  color: #fff;
+}
+.landing .dr img {
+  width: 200px;
+  transform: rotate(15deg);
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.apps .text2 {
+  margin: 0 12%;
+  font-family: "Baskervville", serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+.apps .text2 h1 {
+  font-size: 225px;
+  margin: 0;
+}
+.apps .text2 h2 {
+  font-size: 140px;
+  text-align: right;
+  margin: 0;
+}
+.apps img {
+  height: 80vh;
+}
+.apps .appdesc {
+  width: 500px;
+}
+.apps .appdesc h1 {
+  font-size: 40px;
+  line-height: 0.5;
+  color: #ffffff;
+  word-spacing: 3px;
+}
+.apps .appdesc p {
+  font-size: 22px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9058823529);
+  text-transform: uppercase;
+  word-spacing: 3px;
+}
+.apps .app1 {
+  padding-top: 15vh;
+}
+.apps .app1 img {
+  margin-left: auto;
+}
+.apps .app1 .appdesc {
+  margin: auto;
+}
+.apps .app2 {
+  padding-top: 15vh;
+}
+.apps .app2 .appdesc {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.apps .app2 img {
+  margin: auto;
+}
+
+.box3 {
+  background-color: rgba(4, 3, 6, 0.7882352941);
+  height: 210vh;
+}
+
+.box4 {
+  background-color: #040306;
+  height: 200vh;
+}/*# sourceMappingURL=style.css.map */

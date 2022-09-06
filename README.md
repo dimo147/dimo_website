@@ -2,8 +2,9 @@
 
 ## depencies
 
- - fullpagejs
- - AOS
- - google fonts
+ - html
+ - css
+ - javascript
+ - scrollTrigger
  - gsap
-
+ - google fonts
