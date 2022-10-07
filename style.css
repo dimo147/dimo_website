@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
 body {
   margin: 0;
@@ -7,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .row {
@@ -18,30 +20,10 @@ body {
   flex-direction: column;
 }
 
-.width100 {
-  width: 100%;
-}
-
-.height100 {
-  height: 100%;
-}
-
-.box1 {
-  background-color: #040306;
-  width: 100%;
-  height: 160vh;
-}
-
-.box2 {
-  background-color: rgba(4, 3, 6, 0.7882352941);
-  width: 100%;
-  height: 100vh;
-}
-
 .nav {
   list-style: none;
-  margin: 0 10%;
-  padding: 40px 0 60px 0;
+  margin: 0 6%;
+  padding: 30px 0 40px 0;
   text-align: center;
   position: relative;
   z-index: 5;
@@ -54,7 +36,7 @@ body {
 }
 .nav a {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px 20px 15px 20px;
   margin-right: 20px;
   text-decoration: none;
@@ -65,7 +47,7 @@ body {
   transform: translateY(70px);
 }
 .nav .icon {
-  height: 60px;
+  height: 50px;
   float: left;
   opacity: 0;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -74,148 +56,401 @@ body {
 }
 
 .landing {
-  margin: 0 10%;
+  margin: 0;
+}
+.landing .textbox {
+  margin: 0 auto;
 }
 .landing .text1 {
-  font-family: "Baskervville", serif;
-  font-weight: 300;
-  font-size: 140px;
-  word-spacing: 3px;
-  letter-spacing: 2px;
-  text-align: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-.landing .text1 .ti {
-  margin-left: 7vw;
-  text-align: center;
-}
-.landing .text1 .crea {
-  opacity: 0;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  transform: translateY(70px);
-  margin-top: auto;
-}
-.landing .text1 img {
-  border-radius: 50% 50% 50% 5px; /*TL TR BR BL*/
-  width: 200px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  transform: translateY(70px);
-  margin: 0 15px;
-  margin-bottom: 40px;
-}
-.landing .text1 .tive {
-  opacity: 0;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  transform: translateY(70px);
-  margin-top: auto;
-}
-.landing .text1 p {
   margin: 0;
-  opacity: 0;
-  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  transform: translateY(70px);
-}
-.landing .dr {
-  margin: auto;
-  margin-top: 7vh;
-}
-.landing .dr .desc {
-  width: 400px;
-  font-size: 24px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.6784313725);
+  font-size: 70px;
+  color: white;
   text-transform: uppercase;
-  word-spacing: 3px;
-  margin-right: 15vh;
+  width: 500px;
+  letter-spacing: 1.3;
+  word-spacing: 5;
+  margin-top: 12%;
+  line-height: 1.4;
+  z-index: 3;
   opacity: 0;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
           clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transform: translateY(70px);
 }
-.landing .dr .desc span {
-  color: #fff;
+.landing .text2 {
+  margin: 0;
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  width: 500px;
+  letter-spacing: 1.3;
+  word-spacing: 5;
+  background: -webkit-linear-gradient(45deg, #eee, rgb(111, 0, 155));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.landing .dr img {
+.landing .hand {
   width: 200px;
-  transform: rotate(15deg);
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 10%;
+  margin-top: 200px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px) rotate(-12deg);
+}
+.landing .rbox1 {
+  z-index: 20;
+  position: absolute;
+  right: 10%;
+  border: #fff 2px solid;
+  margin-top: 250px;
+  width: 320px;
+  height: 700px;
+  border-radius: 250px 250px 250px 250px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+  color: white;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+.landing .rbox1 .logo1 {
+  margin-left: 6%;
+  margin-top: 70px;
+  width: 120px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.landing .rbox1 p {
+  margin: 0 8%;
+  text-transform: uppercase;
+  line-height: 1.6;
+  word-spacing: 2;
+  letter-spacing: 2;
+  font-size: 18px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.landing .rbox1 img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   opacity: 0;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
           clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
 
-.apps .text2 {
-  margin: 0 12%;
-  font-family: "Baskervville", serif;
+.mid {
+  height: 100%;
+  width: 100%;
+}
+.mid .text1 {
+  color: rgb(179, 179, 179);
   text-transform: uppercase;
-  color: #fff;
-}
-.apps .text2 h1 {
-  font-size: 225px;
+  width: 505px;
   margin: 0;
+  padding-top: 180px;
+  margin-left: 110px;
+  font-size: 36px;
+  line-height: 1.5;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.apps .text2 h2 {
-  font-size: 140px;
-  text-align: right;
-  margin: 0;
+.mid .text1 span {
+  color: white;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.apps img {
-  height: 80vh;
+.mid .image {
+  padding-left: 200px;
+  z-index: 20;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.apps .appdesc {
-  width: 500px;
+.mid .image img {
+  width: 320px;
+  height: 700px;
+  border-radius: 250px 250px 250px 250px;
+  z-index: 20;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -120px;
 }
-.apps .appdesc h1 {
+
+.about .abouttext {
   font-size: 40px;
-  line-height: 0.5;
-  color: #ffffff;
-  word-spacing: 3px;
-}
-.apps .appdesc p {
-  font-size: 22px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.9058823529);
   text-transform: uppercase;
-  word-spacing: 3px;
+  color: white;
+  margin-left: 140px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-top: 80px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.apps .app1 {
-  padding-top: 15vh;
+.about .links {
+  color: white;
 }
-.apps .app1 img {
+.about .links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.692);
+  text-transform: uppercase;
+  padding: 10px 0;
+  padding-left: 3px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.about .links a:hover {
+  color: rgb(255, 255, 255);
+}
+.about .links h2 {
+  text-transform: capitalize;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.about .links .contact, .about .links .about1 {
+  margin-left: 200px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.about .links .head {
+  width: 220px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 200px 200px 0 200px;
+  display: block;
   margin-left: auto;
+  margin-right: 140px;
+  margin-top: 90px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
 }
-.apps .app1 .appdesc {
-  margin: auto;
-}
-.apps .app2 {
-  padding-top: 15vh;
-}
-.apps .app2 .appdesc {
+.about .copyright {
+  color: rgba(255, 255, 255, 0.789);
   margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-right: 50px;
 }
-.apps .app2 img {
-  margin: auto;
+.about ul {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.about ul li {
+  display: inline-block;
+  margin: 30px;
+  opacity: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(70px);
+}
+.about ul .download {
+  width: 200px;
+  height: 75px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.about ul .download > .fa {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.about ul .df,
+.about ul .dfn {
+  position: absolute;
+  left: 80px;
+}
+.about ul .df {
+  top: 20px;
+  font-size: 0.68em;
+}
+.about ul .dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+.about ul .download:hover {
+  filter: invert(100%);
+}
+
+.box1 {
+  display: block;
+  position: relative;
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+}
+
+.box2 {
+  display: block;
+  position: relative;
+  background-color: rgba(4, 3, 6, 0.7882352941);
+  width: 100%;
+  height: 100vh;
 }
 
 .box3 {
-  background-color: rgba(4, 3, 6, 0.7882352941);
-  height: 210vh;
+  display: block;
+  background-color: #040306;
+  width: 100%;
+  height: 100vh;
 }
 
-.box4 {
-  background-color: #040306;
-  height: 200vh;
+@media only screen and (max-width: 1300px) {
+  .landing .rbox1 {
+    right: 5%;
+  }
+  .landing .hand {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .landing .text1 {
+    font-size: 50px;
+    width: 300px;
+    margin-top: 12%;
+  }
+  .landing .text2 {
+    font-size: 60px;
+    width: 345px;
+  }
+  .mid .image {
+    padding-left: 0;
+  }
+  .mid .image img {
+    margin-right: 100px;
+  }
+  .about .links .head {
+    width: 160px;
+    height: 160px;
+    margin-top: 160px;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .about .abouttext {
+    margin-left: 70px;
+  }
+  .about .links .contact, .about .links .about1 {
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+  .mid .text1 {
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .landing .hand {
+    margin-top: 300px;
+    margin-left: 8%;
+  }
+  .landing .rbox1 {
+    margin-top: 300px;
+  }
+  .mid .image img {
+    margin-top: -40px;
+    margin-right: 40px;
+  }
+  .about .links .head {
+    display: none;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .mid .image {
+    display: none;
+  }
+  .mid .text1 {
+    padding-top: 50%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .landing .text1 {
+    margin-top: 5%;
+  }
+  .landing .hand {
+    display: none;
+  }
+  .landing .rbox1 {
+    position: relative;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .mid .text1 {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .about .abouttext {
+    margin-left: 40px;
+  }
+  .about .links .about1, .about .links .contact {
+    margin-left: 70px;
+  }
+  .mid .text1 {
+    width: 90%;
+    font-size: 24;
+    padding-top: 350px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about .abouttext {
+    margin-left: 30px;
+  }
+  .about .links .about1, .about .links .contact {
+    margin-left: 50px;
+  }
+  .nav {
+    text-align: right;
+  }
+  .nav li {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
