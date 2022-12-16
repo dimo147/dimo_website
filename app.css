@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background-color: #040306;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.back {
+  color: #fff;
+  width: 40px;
+  margin-top: 3%;
+}
+
+.app1 .box {
+  display: flex;
+}
+.app1 .icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+  border: #5500ff 2px solid;
+}
+.app1 .desc {
+  margin: auto;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.app1 .desc h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.app2 .box {
+  display: flex;
+  margin-top: 40px;
+}
+.app2 .icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+  border: #5500ff 2px solid;
+}
+.app2 .desc {
+  margin: auto;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.app2 .desc h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 1% 10% 0% 10%;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    margin: 5% 5% 0% 5%;
+  }
+  div[class^=app] .desc {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  div[class^=app] .icon {
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+  }
+  div[class^=app] .desc {
+    margin-left: 30px;
+  }
+}/*# sourceMappingURL=app.css.map */
