@@ -2,10 +2,14 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-image: url('/images/background.png');
+    background-image: url('/images/background8.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -14,8 +18,9 @@ body{
 
 // color palette
 
+// #FFF
+// #000
 // #040306
-// #ca00a2
 
 // properties
 
@@ -161,12 +166,12 @@ body{
 .mid {
     height: 100%;
     width: 100%;
-    .text1 {
+    .text3 {
         color: rgb(179, 179, 179);
         text-transform: uppercase;
         width: 505px;
         margin: 0;
-        padding-top: 180px;
+        padding-top: 14%;
         margin-left: 110px;
         font-size: 36px;
         line-height: 1.5;
@@ -395,7 +400,7 @@ body{
         }
     }
     .mid {
-        .text1 {
+        .text3 {
             margin-left: 70px;
         }
     }
@@ -433,7 +438,7 @@ body{
         .image {
             display: none;
         }
-        .text1 {
+        .text3 {
             padding-top: 50%;
         }
     }
@@ -461,7 +466,7 @@ body{
 
 @media only screen and (max-width: 590px){
     .mid {
-        .text1 {
+        .text3 {
             margin-left: 20px;
             margin-right: 0;
         }
@@ -480,9 +485,9 @@ body{
         }
     }
     .mid {
-        .text1 {
+        .text3 {
             width: 90%;
-            font-size: 24;
+            font-size: 34px;
             padding-top: 350px;
         }
     }
@@ -504,6 +509,37 @@ body{
         li {
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-height: 890px) and (max-width: 470px){
+    .box2 {
+        height: 110vh;
+        .text3 {
+            padding-top: 105%;
+        }
+    }
+    .box3 {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-height: 785px) and (max-width: 1300px){
+    .about {
+        .links {
+            .head {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 820px) and (max-width: 400px){
+    .mid {
+        .text3 {
+            font-size: 30px;
+            padding-top: 120%;
         }
     }
 }

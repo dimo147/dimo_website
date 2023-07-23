@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-image: url("/images/background.png");
+  background-image: url("/images/background8.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -160,12 +164,12 @@ body {
   height: 100%;
   width: 100%;
 }
-.mid .text1 {
+.mid .text3 {
   color: rgb(179, 179, 179);
   text-transform: uppercase;
   width: 505px;
   margin: 0;
-  padding-top: 180px;
+  padding-top: 14%;
   margin-left: 110px;
   font-size: 36px;
   line-height: 1.5;
@@ -176,7 +180,7 @@ body {
           clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transform: translateY(70px);
 }
-.mid .text1 span {
+.mid .text3 span {
   color: white;
   opacity: 0;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -375,7 +379,7 @@ body {
     margin-left: 100px;
     margin-bottom: 100px;
   }
-  .mid .text1 {
+  .mid .text3 {
     margin-left: 70px;
   }
 }
@@ -399,7 +403,7 @@ body {
   .mid .image {
     display: none;
   }
-  .mid .text1 {
+  .mid .text3 {
     padding-top: 50%;
   }
 }
@@ -421,7 +425,7 @@ body {
   }
 }
 @media only screen and (max-width: 590px) {
-  .mid .text1 {
+  .mid .text3 {
     margin-left: 20px;
     margin-right: 0;
   }
@@ -433,9 +437,9 @@ body {
   .about .links .about1, .about .links .contact {
     margin-left: 70px;
   }
-  .mid .text1 {
+  .mid .text3 {
     width: 90%;
-    font-size: 24;
+    font-size: 34px;
     padding-top: 350px;
   }
 }
@@ -452,5 +456,27 @@ body {
   .nav li {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-height: 890px) and (max-width: 470px) {
+  .box2 {
+    height: 110vh;
+  }
+  .box2 .text3 {
+    padding-top: 105%;
+  }
+  .box3 {
+    height: 110vh;
+  }
+}
+@media only screen and (max-height: 785px) and (max-width: 1300px) {
+  .about .links .head {
+    display: none;
+  }
+}
+@media only screen and (max-height: 820px) and (max-width: 400px) {
+  .mid .text3 {
+    font-size: 30px;
+    padding-top: 120%;
   }
 }/*# sourceMappingURL=style.css.map */
