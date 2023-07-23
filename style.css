@@ -117,7 +117,7 @@ body {
   margin-top: 250px;
   width: 320px;
   height: 700px;
-  border-radius: 250px 250px 250px 250px;
+  border-radius: 250px;
   opacity: 0;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
           clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -449,6 +449,7 @@ body {
   }
   .about .links .about1, .about .links .contact {
     margin-left: 50px;
+    margin-top: 0px;
   }
   .nav {
     text-align: right;
@@ -456,6 +457,36 @@ body {
   .nav li {
     display: flex;
     flex-direction: column;
+  }
+  .landing .text1 {
+    font-size: 45px;
+    width: 250px;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .landing .text2 {
+    font-size: 55px;
+    width: 345px;
+    margin-left: 3%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about .abouttext {
+    margin-left: 25px;
+    font-size: 35px;
+  }
+  .about .links .about1, .about .links .contact {
+    margin-left: 35px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .landing .rbox1 {
+    width: 300px;
+    height: 620px;
+  }
+  .text3 {
+    padding-top: 110% !important;
+    font-size: 30px !important;
   }
 }
 @media only screen and (max-height: 890px) and (max-width: 470px) {
