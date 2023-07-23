@@ -501,7 +501,8 @@ body{
         .links {
             .about1, .contact {
                 margin-left: 50px;
-                margin-top: 0px;
+                margin-bottom: 50px;
+                margin-top: 50px;
             }
         }
     }
@@ -524,6 +525,10 @@ body{
             width: 345px;
             margin-left: 3%;
         }
+    }
+    .copyright {
+        margin-right: 25px !important;
+        margin-bottom: 20px;
     }
 }
 
@@ -562,7 +567,7 @@ body{
         }
     }
     .box3 {
-        height: 110vh;
+        height: 102vh;
     }
 }
 
