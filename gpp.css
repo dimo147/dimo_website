@@ -65,7 +65,7 @@ hr {
 }
 .tag {
     margin: 40px 0;
-    color: rgba(0, 0, 0, 0.796);
+    color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 700px){

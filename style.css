@@ -505,6 +505,19 @@ body {
     height: 102vh;
   }
 }
+@media only screen and (max-height: 800px) and (max-width: 380px) {
+  .box3 {
+    height: 112vh;
+  }
+}
+@media only screen and (max-height: 725px) and (max-width: 380px) {
+  .box2 {
+    height: 122vh;
+  }
+  .box3 {
+    height: 122vh;
+  }
+}
 @media only screen and (max-height: 785px) and (max-width: 1300px) {
   .about .links .head {
     display: none;
